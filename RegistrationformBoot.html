@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Bootstrap Registrationform </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      background-image: url(https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171__480.jpg);
+        height: 600px;
+        width: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        background-size: cover;
+    }
+    label{
+      color: white;
+      text-shadow: 2px 2px 18px black;
+    }
+    h2{
+      color: white;
+      font-weight: 700;
+      
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h2>Registration form</h2>
+  <form>
+    <div class="form-group">
+      <label for="Username">User Name:</label>
+      <input type="text" class="form-control" id="Username" placeholder="Enter Username" name="Username">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="Phone">Phone number:</label>
+      <input type="tel" class="form-control" id="Phone" placeholder="Enter Phone number" name="Phone">
+    </div>
+    <div class="form-group">
+      <label for="CompanyName">Company Name:</label>
+      <input type="text" class="form-control" id="companyname" placeholder="Company Name" name="CompanyName">
+    </div>
+    <div class="form-group">
+      <label for="pwd"> New Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>

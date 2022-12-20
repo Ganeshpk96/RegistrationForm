@@ -1,0 +1,66 @@
+<html>
+    <head>
+<style>
+    body{
+        background-image: url(https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171__480.jpg);
+        height: 600px;
+        width: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        background-size: cover;
+        
+    }
+    .formsection{
+        position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto !important;
+    display: inline-table;
+    }
+</style>
+
+    </head>
+<body>
+
+
+<div class="formsection">
+    <h2>HTML Forms</h2>
+<form onsubmit="FormData()">
+
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Ganesh"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="PK"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<h1>MouseOver and MouseOut</h1>
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="https://static6.depositphotos.com/1003625/592/i/600/depositphotos_5926887-stock-photo-smiley.jpg" alt="Image" width="50" height="50">
+
+</div>
+</body>
+<script>
+    function bigImg(x) {
+  x.style.height = "100px";
+  x.style.width = "100px";
+}
+
+function normalImg(x) {
+  x.style.height = "50px";
+  x.style.width = "50px";
+}
+function FormData(){
+    event.preventDefault()
+    alert("Data Submitted")
+    var fname = document.getElementById("fname");
+    var lname = document.getElementById("lname");
+    var Submitteddata = {
+        firstname : fname.value,
+        lastname : lname.value
+ }
+ console.log(Submitteddata)
+}
+
+</script>
+</html>
